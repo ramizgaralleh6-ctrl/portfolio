@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramiz Ashraf Alqaraleh — Junior Frontend Developer</title>
+  <meta name="description" content="Portfolio of Ramiz Ashraf Alqaraleh, a junior frontend developer from Al-Karak, Jordan, built with HTML5 and CSS3." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+
+  <input type="checkbox" id="theme-toggle" class="theme-toggle-input" />
+
+  <div class="page">
+
+    <header class="navbar">
+      <a href="#home" class="logo">RA<span class="logo-dot">.</span></a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <details class="nav-mobile">
+        <summary>Menu</summary>
+        <div class="nav-mobile-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#journey">Journey</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </details>
+
+      <label for="theme-toggle" class="theme-switch" aria-label="Toggle dark mode">
+        <span class="theme-switch-track">
+          <span class="theme-switch-thumb"></span>
+        </span>
+      </label>
+    </header>
+
+    <main>
+
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Hey, I'm</p>
+          <h1>Ramiz Ashraf Alqaraleh</h1>
+          <p class="role">Junior Frontend Developer</p>
+          <p class="statement">I turn design ideas into clean, working websites — built with care from Al-Karak, Jordan.</p>
+          <div class="cta-group">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-frame">
+            <img src="images.jpg" alt="Photo of Ramiz Ashraf Alqaraleh" class="profile-img" width="280" height="280" loading="eager" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2 class="section-title"><span class="title-index">01</span>About Me</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm a tech student who loves building things for the web. I enjoy turning design ideas into clean, working websites, and I always try to make sites that look good and are easy to use for everyone.</p>
+            <p>Right now I'm studying Data Science and Artificial Intelligence at Mutah University, and training as a Full-Stack Developer on the side. I really like working with Flexbox and Grid — they make it so much easier to build layouts that just work on any screen size.</p>
+          </div>
+
+          <ul class="about-facts">
+            <li>
+              <span class="fact-label">Based in</span>
+              <span class="fact-value">Al-Karak, Jordan</span>
+            </li>
+            <li>
+              <span class="fact-label">Studying</span>
+              <span class="fact-value">Data Science & AI, Mutah University</span>
+            </li>
+            <li>
+              <span class="fact-label">Also training as</span>
+              <span class="fact-value">Full-Stack Developer</span>
+            </li>
+            <li>
+              <span class="fact-label">Currently focused on</span>
+              <span class="fact-value">CSS Layouts (Flexbox & Grid)</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2 class="section-title"><span class="title-index">02</span>Skills & Tech Stack</h2>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3><span class="skill-icon">&lt;/&gt;</span>Frontend</h3>
+            <ul class="skill-bars">
+              <li>
+                <div class="skill-bar-head"><span>HTML5</span><span>85%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-bar-head"><span>CSS3</span><span>80%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+              </li>
+              <li>
+                <div class="skill-bar-head"><span>Flexbox & Grid</span><span>80%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 80%;"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3><span class="skill-icon">$_</span>Tools</h3>
+            <div class="tag-group">
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">VS Code</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h3><span class="skill-icon">&#9670;</span>Soft Skills</h3>
+            <div class="tag-group">
+              <span class="tag">Problem-Solving</span>
+              <span class="tag">Teamwork</span>
+              <span class="tag">Fast Learning</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 class="section-title"><span class="title-index">03</span>Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-body">
+              <h3>HTML Tasks</h3>
+              <p class="project-desc">A comprehensive collection of practical exercises and tasks built to master core web structuring, semantic elements, and modern HTML5 tags.</p>
+              <div class="tag-group small">
+                <span class="tag">HTML5</span>
+                <span class="tag">Web Structure</span>
+              </div>
+              <div class="project-links" style="margin-top: 15px;">
+                <a href="https://github.com/ramizgaralleh6-ctrl/html-tasks" target="_blank" rel="noopener" class="btn btn-small btn-primary" style="background: var(--blue-600); color: white; border-radius: var(--radius-full); padding: 0.5rem 1rem;">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-body">
+              <h3>Flexbox & Grid Layouts</h3>
+              <p class="project-desc">Advanced applications of modern CSS layout systems designed to build highly flexible, structured, and fully responsive web interfaces across all device screens.</p>
+              <div class="tag-group small">
+                <span class="tag">CSS3</span>
+                <span class="tag">Flexbox</span>
+                <span class="tag">CSS Grid</span>
+              </div>
+              <div class="project-links" style="margin-top: 15px;">
+                <a href="https://github.com/ramizgaralleh6-ctrl/flex-and-grid" target="_blank" rel="noopener" class="btn btn-small btn-primary" style="background: var(--blue-600); color: white; border-radius: var(--radius-full); padding: 0.5rem 1rem;">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-body">
+              <h3>CSS Selectors & nth-child</h3>
+              <p class="project-desc">Targeted training modules focusing on advanced CSS selection techniques, pseudo-classes, and dynamic DOM styling using complex nth-child patterns.</p>
+              <div class="tag-group small">
+                <span class="tag">CSS3</span>
+                <span class="tag">Selectors</span>
+                <span class="tag">nth-child</span>
+              </div>
+              <div class="project-links" style="margin-top: 15px;">
+                <a href="https://github.com/ramizgaralleh6-ctrl/nth-child" target="_blank" rel="noopener" class="btn btn-small btn-primary" style="background: var(--blue-600); color: white; border-radius: var(--radius-full); padding: 0.5rem 1rem;">GitHub Repo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section><br>
+
+      <section id="journey" class="journey">
+        <h2 class="section-title"><span class="title-index">04</span>Learning Journey</h2>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-tag">Now</span>
+              <h3>Data Science & AI — Mutah University</h3>
+              <p>Studying Data Science and Artificial Intelligence, while training on the side as a Full-Stack Developer.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-tag">Focus</span>
+              <h3>Mastering Layout Systems</h3>
+              <p>Practicing CSS Flexbox and Grid every day, and building fully responsive designs from scratch.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+              <span class="timeline-tag">2026 & beyond</span>
+              <h3>Full-Stack Development</h3>
+              <p>Finishing my Full-Stack Developer training and continuing on to a Master's degree in Full-Stack Development.</p>
+            </div>
+          </li>
+        </ol>
+      </section><br>
+
+      <section id="contact" class="contact">
+        <h2 class="section-title"><span class="title-index">05</span>Contact</h2>
+        <p class="contact-lead">Got a project in mind, or just want to say hi? I'd love to hear from you.</p>
+
+        <div class="contact-grid">
+          <a href="mailto:ramizgaralleh6@gmail.com" class="contact-card">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">ramizgaralleh6@gmail.com</span>
+          </a>
+
+          <a href="tel:+9627735320" class="contact-card">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+962 7735 320</span>
+          </a>
+
+          <a href="https://github.com/ramizgaralleh6-ctrl" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">@ramizgaralleh6-ctrl</span>
+          </a>
+
+          <div class="contact-card no-link">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Al-Karak, Jordan</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <span class="footer-name">Ramiz Ashraf Alqaraleh</span>
+        <span class="footer-role">Junior Frontend Developer</span>
+      </div>
+
+      <p class="footer-copy">&copy; 2026 Ramiz Ashraf Alqaraleh. Built with HTML5 & CSS3.</p>
+    </footer>
+
+  </div></body>
+</html>
